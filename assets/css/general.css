@@ -432,7 +432,10 @@
     .block-tolls {
         flex-direction: column;
     }
-
+    .tools-texts{
+        width: 100%;
+        justify-content: space-between;
+    }
     .block-tolls-item {
         width: 100%;
     }
@@ -495,6 +498,7 @@
     .tools-texts {
         gap: 5px;
         padding: 5px;
+
     }
     .block-cnt{
         margin-top: 24px;

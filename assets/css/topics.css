@@ -251,6 +251,12 @@
     .selecting-topic-block{
         padding: 14px;
     }
+    .topic-media {
+        max-width: 332px;
+        margin: 0 auto;
+
+    }
+
     .topic-desktop-picture{
         display: none;
     }
