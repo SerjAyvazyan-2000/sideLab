@@ -1,0 +1,267 @@
+
+.topic-section {
+    margin-top: 120px;
+    padding-bottom: 100px;
+}
+
+.topic-media {
+    background: var(--dark-gray);
+    box-shadow: 0px 0px 12px 0px rgba(7, 13, 39, 0.08);
+    border-radius: 20px;
+    max-width: 960px;
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+.topic-body {
+    gap: 20px;
+}
+
+.selecting-topic-block {
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0px 0px 12px 0px rgba(7, 13, 39, 0.08);
+    background: var(--light-black);
+    border-radius: 16px;
+    padding: 20px;
+
+}
+
+.topic-search {
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.topic-label {
+    max-width: 328px;
+    width: 100%;
+    height: 40px;
+}
+
+.topic-search-input {
+    width: 100%;
+    border-radius: 6px;
+    background: var(--light-black2);
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--white);
+    padding: 10px 12px;
+}
+
+.topic-search-input::placeholder {
+    opacity: .6;
+
+}
+
+.topic-search-icon {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+    background: var(--light-black2);
+    border-radius: 6px;
+
+}
+
+.icon-receive {
+    font-size: 24px;
+    background: var(--primary);
+}
+
+.topic-categories-list {
+    margin-top: 16px;
+    max-height: 432px;
+    overflow: auto;
+}
+
+.topic-categories-list::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+}
+
+.topic-categories-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.topic-categories-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.topic-categories {
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.topic-tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.topic-tab {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--white);
+    border-radius: 6px;
+    background: var(--light-black2);
+    transition: .3s;
+    border: 0.4px solid transparent;
+    cursor: pointer;
+
+}
+
+.topic-tab:hover {
+    border: 0.4px solid var(--primary);
+    background: var(--light-black);
+}
+
+.topic-tab.active {
+    border: 0.4px solid var(--primary);
+    background: var(--light-black);
+}
+
+.topic-categories-list {
+    gap: 8px;
+    margin-top: 20px;
+
+}
+
+.topic-categories-item {
+    max-width: 120px;
+    width: 100%;
+    border: 0.4px solid transparent;
+    transition: .3s;
+    padding: 8px 8px 10px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.topic-categories-item:hover {
+    border: 0.4px solid var(--primary);
+    background: var(--light-black);
+
+}
+
+.topic-categories-item:hover .icon-check {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.topic-categories-item:hover .topic-categories-text p {
+    color: var(--primary);
+
+}
+
+
+.topic-categories-body {
+    background: var(--light-black2);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.topic-categories-cnt {
+    background: var(--light-black);
+    border-radius: 6px;
+    padding: 20px 8px;
+}
+
+.topic-cnt-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--white);
+
+}
+
+.topic-cnt-clue {
+    margin-top: 4px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    color: var(--white);
+
+}
+
+.topic-cnt-clue p {
+    color: var(--white);
+
+}
+
+.topic-cnt-clue span {
+    color: var(--primary);
+    text-decoration: underline;
+
+}
+
+.topic-categories-text {
+    width: 100%;
+    gap: 4px;
+    margin-top: 8px;
+}
+.topic-picture img{
+    border-radius: 20px;
+}
+.topic-mobile-picture{
+    display: none;
+}
+.topic-categories-text p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--white);
+    transition: .3s;
+
+
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 992px) {
+    .topic-body {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .selecting-topic-block {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 576px) {
+    .selecting-topic-block{
+        padding: 14px;
+    }
+    .topic-desktop-picture{
+        display: none;
+    }
+    .topic-categories-item{
+        max-width: 141px;
+    }
+    .topic-mobile-picture{
+        display: block;
+    }
+    .topic-section{
+        margin-top: 84px;
+        padding-bottom: 80px;
+    }
+}

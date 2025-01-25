@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+.icon-coins{
+    mask-image: url(coins.svg);
+    -webkit-mask-image: url(coins.svg);
+}
+
+.icon-plus{
+    mask-image: url(plus.svg);
+    -webkit-mask-image: url(plus.svg);
+}
+.icon-profile{
+    mask-image: url(profile.svg);
+    -webkit-mask-image: url(profile.svg);
+}
+.icon-arrowDown{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.tools-arrowDown{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-slides{
+    mask-image: url(slides.svg);
+    -webkit-mask-image: url(slides.svg);
+}
+.icon-amount{
+    mask-image: url(amount.svg);
+    -webkit-mask-image: url(amount.svg);
+}
+.icon-language{
+    mask-image: url(language.svg);
+    -webkit-mask-image: url(language.svg);
+}
+.icon-delete{
+    mask-image: url(delete.svg);
+    -webkit-mask-image: url(delete.svg);
+}
+.queries-icon{
+    mask-image: url(queriesIcon.svg);
+    -webkit-mask-image: url(queriesIcon.svg);
+}
+.icon-arrowUp{
+    mask-image: url(arrowUp.svg);
+    -webkit-mask-image: url(arrowUp.svg);
+}
+.history-icon{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.load-more-icon{
+    mask-image: url(plus.svg);
+    -webkit-mask-image: url(plus.svg);
+}
+.icon-check{
+    mask-image: url(check.svg);
+    -webkit-mask-image: url(check.svg);
+}
+.icon-headlines{
+    mask-image: url(headlines.svg);
+    -webkit-mask-image: url(headlines.svg);
+}
+.icon-bin{
+    mask-image: url(bin.svg);
+    -webkit-mask-image: url(bin.svg);
+}
+.add-icon-plus{
+    mask-image: url(plus.svg);
+    -webkit-mask-image: url(plus.svg);
+}
+.icon-receive{
+    mask-image: url(reseive.svg);
+    -webkit-mask-image: url(reseive.svg);
+}

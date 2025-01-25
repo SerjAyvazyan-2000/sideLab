@@ -1,0 +1,29 @@
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px 0;
+    width: 100%;
+    transition: .3s;
+}
+
+.footer-body {
+    box-shadow: 0px 0px 12px 0px rgba(7, 13, 39, 0.08);
+    border-radius: 16px;
+    background: var(--light-black);
+    padding: 20px;
+    gap: 20px;
+    transition: .3s;
+
+}
+.footer.moved{
+    padding: 10px 0;
+
+}
+.footer.moved .footer-body{
+    padding: 10px;
+
+}
+
