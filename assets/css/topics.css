@@ -132,7 +132,7 @@
 }
 
 .topic-categories-item {
-    max-width: 120px;
+    flex: 1 1 31%;
     width: 100%;
     border: 0.4px solid transparent;
     transition: .3s;
@@ -205,12 +205,15 @@
     gap: 4px;
     margin-top: 8px;
 }
-.topic-picture img{
+
+.topic-picture img {
     border-radius: 20px;
 }
-.topic-mobile-picture{
+
+.topic-mobile-picture {
     display: none;
 }
+
 .topic-categories-text p {
     font-size: 12px;
     font-weight: 400;
@@ -248,25 +251,24 @@
 
 
 @media (max-width: 576px) {
-    .selecting-topic-block{
+    .selecting-topic-block {
         padding: 14px;
     }
-    .topic-media {
-        max-width: 332px;
-        margin: 0 auto;
 
-    }
-
-    .topic-desktop-picture{
+    .topic-desktop-picture {
         display: none;
     }
-    .topic-categories-item{
-        max-width: 141px;
+
+    .topic-categories-item {
+        flex: 1 1 48%;
+        max-width: 100%;
     }
-    .topic-mobile-picture{
+
+    .topic-mobile-picture {
         display: block;
     }
-    .topic-section{
+
+    .topic-section {
         margin-top: 84px;
         padding-bottom: 80px;
     }
