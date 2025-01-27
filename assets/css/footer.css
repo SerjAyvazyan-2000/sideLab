@@ -4,6 +4,7 @@
 .footer {
     position: fixed;
     bottom: 0;
+    padding: 20px 0;
     width: 100%;
     transition: .3s;
 }
@@ -17,9 +18,20 @@
     transition: .3s;
 
 }
+.footer.moved{
+    padding: 10px 0;
 
+}
 .footer.moved .footer-body{
     padding: 10px;
+
+}
+
+@media (max-width: 567px) {
+    .footer {
+        padding: 0;
+
+    }
 
 }
 

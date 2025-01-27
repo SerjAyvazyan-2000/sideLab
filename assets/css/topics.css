@@ -24,7 +24,14 @@
     box-shadow: 0px 0px 12px 0px rgba(7, 13, 39, 0.08);
     background: var(--light-black);
     border-radius: 16px;
+
+}
+
+.selecting-topic-header {
     padding: 20px;
+    background: var(--light-black);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
 
 }
 
@@ -41,11 +48,13 @@
 
 
 }
+
 .topic-label .topic-icon-delete {
     display: none;
     cursor: pointer;
 }
-.topic-icon-delete{
+
+.topic-icon-delete {
     font-size: 24px;
     background: var(--white);
     position: absolute;
@@ -77,6 +86,7 @@
     opacity: .6;
 
 }
+
 .topic-search-input:focus {
     border: 0.4px solid var(--primary);
 }
@@ -91,7 +101,8 @@
     transition: .3s;
 
 }
-.topic-search-icon:hover{
+
+.topic-search-icon:hover {
     background: var(--gray);
 
 }
@@ -102,9 +113,10 @@
 }
 
 .topic-categories-list {
-    margin-top: 16px;
-    max-height: 432px;
+    max-height: 306px;
     overflow: auto;
+    padding: 20px;
+
 }
 
 .topic-categories-list::-webkit-scrollbar {
@@ -124,12 +136,12 @@
 .topic-categories {
     gap: 8px;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .topic-tabs {
     flex-wrap: wrap;
     gap: 8px;
+    margin-top: 16px;
 }
 
 .topic-tab {
@@ -147,7 +159,7 @@
 }
 
 .topic-tab:hover {
-    background:  var(--gray);
+    background: var(--gray);
 }
 
 .topic-tab.active {
@@ -157,7 +169,6 @@
 
 .topic-categories-list {
     gap: 8px;
-    margin-top: 20px;
 
 }
 
@@ -281,8 +292,14 @@
 
 
 @media (max-width: 576px) {
-    .selecting-topic-block {
+
+    .selecting-topic-header {
         padding: 14px;
+
+    }
+    .topic-categories-list{
+        padding: 14px;
+
     }
 
     .topic-desktop-picture {
