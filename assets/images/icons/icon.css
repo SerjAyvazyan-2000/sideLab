@@ -49,6 +49,10 @@
     mask-image: url(delete.svg);
     -webkit-mask-image: url(delete.svg);
 }
+.topic-icon-delete{
+    mask-image: url(delete.svg);
+    -webkit-mask-image: url(delete.svg);
+}
 .queries-icon{
     mask-image: url(queriesIcon.svg);
     -webkit-mask-image: url(queriesIcon.svg);

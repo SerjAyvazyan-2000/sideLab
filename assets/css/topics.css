@@ -37,6 +37,26 @@
     max-width: 328px;
     width: 100%;
     height: 40px;
+    position: relative;
+
+
+}
+.topic-label .topic-icon-delete {
+    display: none;
+    cursor: pointer;
+}
+.topic-icon-delete{
+    font-size: 24px;
+    background: var(--white);
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    bottom: 8px;
+    transition: .3s;
+}
+
+.topic-search-input:not(:placeholder-shown) + .topic-icon-delete {
+    display: block;
 }
 
 .topic-search-input {
@@ -49,11 +69,16 @@
     line-height: 20px;
     color: var(--white);
     padding: 10px 12px;
+    border: 0.4px solid transparent;
+    transition: .3s;
 }
 
 .topic-search-input::placeholder {
     opacity: .6;
 
+}
+.topic-search-input:focus {
+    border: 0.4px solid var(--primary);
 }
 
 .topic-search-icon {
@@ -62,6 +87,12 @@
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
     background: var(--light-black2);
     border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.topic-search-icon:hover{
+    background: var(--gray);
 
 }
 
@@ -82,7 +113,7 @@
 }
 
 .topic-categories-list::-webkit-scrollbar-thumb {
-    background: #888;
+    background: var(--light-gray);
     border-radius: 4px;
 }
 
@@ -116,8 +147,7 @@
 }
 
 .topic-tab:hover {
-    border: 0.4px solid var(--primary);
-    background: var(--light-black);
+    background:  var(--gray);
 }
 
 .topic-tab.active {

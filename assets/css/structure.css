@@ -26,14 +26,7 @@
     position: relative;
 }
 
-.add-tolls {
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background: var(--primary);
-    top: 196px;
 
-}
 
 .add-icon-plus {
     font-size: 16px;
@@ -47,6 +40,10 @@
     background: var(--white);
 }
 
+
+
+
+
 .add-icon-bg {
     padding: 8px;
     border-radius: 50%;
@@ -55,9 +52,11 @@
     height: 28px;
     position: absolute;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50% ,-50%);
+
     cursor: pointer;
     transition: .3s;
+
 
 }
 
@@ -68,6 +67,25 @@
     gap: 12px;
     cursor: pointer;
     transition: .3s;
+    position: relative;
+}
+.headlines-item:hover .add-tolls{
+    visibility: visible;
+    opacity: 1;
+
+}
+.add-tolls {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: rgba(161, 216, 238, .4);
+    bottom: -6px;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 20px;
+
 }
 
 .headlines-item:hover {
@@ -95,7 +113,7 @@
 
 .icon-headlines {
     font-size: 25px;
-    background: rgba(0, 0, 0, 1);
+    background: var(--light-gray);
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -229,6 +247,13 @@
     }
     .headline-number{
         flex: 0 0 60px;
+    }
+    .add-icon-bg {
+        padding: 6px;
+        width: 20px;
+        height: 20px;
+
+
     }
 }
 

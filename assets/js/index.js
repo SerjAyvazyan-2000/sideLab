@@ -99,6 +99,19 @@ document.querySelectorAll('.block-tolls-item').forEach(item => {
 
 });
 
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.block-tolls-item')) {
+        document.querySelectorAll('.block-tolls-item.active').forEach(activeItem => {
+            activeItem.classList.remove('active');
+        });
+    }
+});
+document.querySelectorAll('.headlines-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const headlineText = item.querySelector('.headline-text').textContent;
+        document.querySelector('.search-input').value = headlineText;
+    });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const loginCnt = document.querySelector(".login-cnt");
@@ -129,7 +142,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+function toggleActiveStateTab(item) {
+    const allItems = document.querySelectorAll('.topic-tab');
+    allItems.forEach(otherItem => {
+        if (otherItem !== item) {
+            otherItem.classList.remove('active');
+        }
+    });
+    item.classList.toggle('active');
+}
+
+document.querySelectorAll('.topic-tab').forEach(item => {
+    item.addEventListener('click', (e) => {
+        toggleActiveStateTab(item)
+        e.preventDefault()
+    });
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const input = document.querySelector('.search-input');
+    const deleteIcon = document.querySelector('.icon-delete');
+    if( input && deleteIcon) {
+        input.addEventListener('input', () => {
+            if (input.value) {
+                deleteIcon.style.display = 'block';
+            } else {
+                deleteIcon.style.display = 'none';
+            }
+        });
+        deleteIcon.addEventListener('click', () => {
+            input.value = '';
+            deleteIcon.style.display = 'none';
+            input.focus();
+        });
+    }
+});
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const inputTopic = document.querySelector('.topic-search-input');
+    const deleteIconTopic = document.querySelector('.topic-icon-delete');
+    if( inputTopic && deleteIconTopic){
+        inputTopic.addEventListener('input', () => {
+            if (inputTopic.value) {
+                deleteIconTopic.style.display = 'block';
+            } else {
+                deleteIconTopic.style.display = 'none';
+            }
+        });
+        deleteIconTopic.addEventListener('click', () => {
+                inputTopic.value = '';
+                deleteIcon.style.display = 'none';
+                inputTopic.focus();
+            });
+    }
 
+});
 

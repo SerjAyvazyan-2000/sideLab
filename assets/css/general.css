@@ -38,10 +38,19 @@
 
 .tolls-icon-bg {
     width: 40px;
+    flex: 0 0 40px;
     height: 40px;
     border: 0.2px solid transparent;
     transition: .3s;
 
+}
+.search-label .icon-delete {
+    display: none;
+    cursor: pointer;
+}
+
+.search-input:not(:placeholder-shown) + .icon-delete {
+    display: block;
 }
 
 .text-wrap {
@@ -86,7 +95,8 @@
 
 }
 
-.tolls-sub-list {
+
+.tolls-sub-block{
     position: absolute;
     left: 0;
     top: 52px;
@@ -99,8 +109,8 @@
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-
 }
+
 
 .slides-sub-list {
     min-width: 220px;
@@ -231,7 +241,7 @@
     color: var(--primary);
 }
 
-.block-tolls-item.active .tolls-sub-list {
+.block-tolls-item.active .tolls-sub-block {
     opacity: 1;
     visibility: visible;
 }
@@ -444,7 +454,7 @@
 
 
 @media (max-width: 576px) {
-    .tolls-sub-list {
+    .tolls-sub-block {
         position: initial;
         opacity: 0;
         visibility: hidden;
@@ -488,12 +498,18 @@
 
 
     .block-tolls-item.active .tolls-sub-list {
+        overflow-x: auto;
+        max-height: 200px;
+
+    }
+    .block-tolls-item.active .tolls-sub-block {
         padding: 10px;
-        max-height: 300px;
         opacity: 1;
         visibility: visible;
-        overflow-x: auto;
+        max-height: 400px;
+
     }
+
 
     .tools-texts {
         gap: 5px;
