@@ -282,6 +282,7 @@
     line-height: 22px;
     color: var(--black);
     cursor: pointer;
+    text-align: center;
 }
 
 .btn-black {
